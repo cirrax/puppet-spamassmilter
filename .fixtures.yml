@@ -1,0 +1,7 @@
+
+---
+fixtures:
+  symlinks:
+          "spamassmilter": "#{source_dir}"
+
+
