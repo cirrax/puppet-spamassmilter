@@ -8,6 +8,7 @@ describe 'spamassmilter::service' do
         :osfamily => 'Debian'
       }
     end
+    let(:pre_condition) { 'class {"::spamassmilter::install": }' }
 
     it 'configures service' do 
       is_expected.to contain_service('spamass-milter').with(
