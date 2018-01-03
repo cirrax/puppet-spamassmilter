@@ -2,7 +2,7 @@
 class spamassmilter (
 ) {
 
-  include spamassmilter::install
-  include spamassmilter::service
+  include ::spamassmilter::install
+  include ::spamassmilter::service
 
 }

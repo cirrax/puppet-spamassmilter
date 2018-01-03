@@ -3,7 +3,7 @@ class spamassmilter::install (
   $ensure = 'installed',
 ){
 
-  include spamassmilter::params
+  include ::spamassmilter::params
 
   package{ 'spamass-milter':
     ensure => $ensure,
