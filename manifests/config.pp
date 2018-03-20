@@ -1,10 +1,10 @@
 # 
 class spamassmilter::config(
-  $options        = $spamassmilter::params::options,
-  $socket         = '',
-  $socketowner    = '',
-  $socketmode     = '',
-  $sysconfig_file = $spamassmilter::params::sysconfig_file,
+  Array  $options        = $spamassmilter::params::options,
+  String $socket         = '',
+  String $socketowner    = '',
+  String $socketmode     = '',
+  String $sysconfig_file = $spamassmilter::params::sysconfig_file,
 ) inherits spamassmilter::params {
 
   if $options != [] {

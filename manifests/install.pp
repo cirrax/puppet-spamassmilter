@@ -1,6 +1,6 @@
 #
 class spamassmilter::install (
-  $ensure = 'installed',
+  String $ensure = 'installed',
 ){
 
   include ::spamassmilter::params

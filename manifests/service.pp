@@ -1,7 +1,7 @@
 # 
 class spamassmilter::service(
-  $ensure = 'running',
-  $enable = true,
+  String  $ensure = 'running',
+  Boolean $enable = true,
 ) {
 
   service { 'spamass-milter':
