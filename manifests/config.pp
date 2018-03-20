@@ -1,4 +1,21 @@
 # 
+# create a config for spamass-milter
+#
+# Parameters:
+#  $options:
+#  An Array of start options. The Array is joined and used
+#  for start.
+#  $socket:
+#  Socket to create.
+#  Remark: on Debian, the socket is created automatically if
+#  postfix is installed, see the $sysconfig files comment
+#  $socketowner:
+#  the owner of the socket to create
+#  $socketmode:
+#  permissions of the socket
+#  $sysconfig_file:
+#  where to write the config.
+#
 class spamassmilter::config(
   Array  $options        = $spamassmilter::params::options,
   String $socket         = '',

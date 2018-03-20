@@ -1,4 +1,6 @@
 #
+# The main class to include
+#
 class spamassmilter (
 ) {
 

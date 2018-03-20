@@ -1,4 +1,6 @@
 #
+# Class to install spamass-milter package
+#
 class spamassmilter::install (
   String $ensure = 'installed',
 ){
