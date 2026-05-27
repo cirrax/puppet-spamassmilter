@@ -1,6 +1,4 @@
-
 class spamassmilter::params {
-
   case $facts['os']['family'] {
     'Debian': {
       $package_name   = 'spamass-milter'

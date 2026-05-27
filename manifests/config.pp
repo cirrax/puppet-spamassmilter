@@ -16,14 +16,13 @@
 #  $sysconfig_file:
 #  where to write the config.
 #
-class spamassmilter::config(
+class spamassmilter::config (
   Array  $options        = $spamassmilter::params::options,
   String $socket         = '',
   String $socketowner    = '',
   String $socketmode     = '',
   String $sysconfig_file = $spamassmilter::params::sysconfig_file,
 ) inherits spamassmilter::params {
-
   if $options != [] {
     $_options = join($options,' ')
     file_line { 'spamassmilter: options':

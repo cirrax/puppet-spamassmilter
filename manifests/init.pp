@@ -3,7 +3,6 @@
 #
 class spamassmilter (
 ) {
-
   Class['spamassmilter::install']
   -> Class['spamassmilter::config']
   -> Class['spamassmilter::service']
@@ -11,5 +10,4 @@ class spamassmilter (
   include spamassmilter::install
   include spamassmilter::config
   include spamassmilter::service
-
 }
