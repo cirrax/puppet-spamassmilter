@@ -1,7 +1,7 @@
 
 class spamassmilter::params {
 
-  case $::osfamily {
+  case $facts['os']['family'] {
     'Debian': {
       $package_name   = 'spamass-milter'
       $sysconfig_file = '/etc/default/spamass-milter'
@@ -11,7 +11,7 @@ class spamassmilter::params {
       ]
     }
     default: {
-      fail("${::operatingsystem} is not supported by the spamassmilter module.")
+      fail("${facts['os']['name']} is not supported by the spamassmilter module.")
     }
   }
 }
