@@ -1,10 +1,5 @@
 # spamass-milter puppet module
 
-[![Build Status](https://travis-ci.org/cirrax/puppet-spamassmilter.svg?branch=master)](https://travis-ci.org/cirrax/puppet-spamassmilter)
-[![Puppet Forge](https://img.shields.io/puppetforge/v/cirrax/spamassmilter.svg?style=flat-square)](https://forge.puppetlabs.com/cirrax/spamassmilter)
-[![Puppet Forge](https://img.shields.io/puppetforge/dt/cirrax/spamassmilter.svg?style=flat-square)](https://forge.puppet.com/cirrax/spamassmilter)
-[![Puppet Forge](https://img.shields.io/puppetforge/e/cirrax/spamassmilter.svg?style=flat-square)](https://forge.puppet.com/cirrax/spamassmilter)
-[![Puppet Forge](https://img.shields.io/puppetforge/f/cirrax/spamassmilter.svg?style=flat-square)](https://forge.puppet.com/cirrax/spamassmilter)
 
 #### Table of Contents
 
