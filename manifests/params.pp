@@ -1,3 +1,5 @@
+# params class
+#
 class spamassmilter::params {
   case $facts['os']['family'] {
     'Debian': {
