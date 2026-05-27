@@ -17,11 +17,11 @@
 #   where to write the config.
 #
 class spamassmilter::config (
-  Array  $options        = $spamassmilter::params::options,
-  String $socket         = '',
-  String $socketowner    = '',
-  String $socketmode     = '',
-  String $sysconfig_file = $spamassmilter::params::sysconfig_file,
+  Array               $options        = $spamassmilter::params::options,
+  Optional[String[1]] $socket         = undef,
+  Optional[String[1]] $socketowner    = undef,
+  Optional[String[1]] $socketmode     = undef,
+  String              $sysconfig_file = $spamassmilter::params::sysconfig_file,
 ) inherits spamassmilter::params {
   if $options != [] {
     $_options = join($options,' ')
@@ -34,7 +34,7 @@ class spamassmilter::config (
     }
   }
 
-  if $socket != '' {
+  if $socket {
     file_line { 'spamassmilter: socket':
       ensure => present,
       path   => $sysconfig_file,
@@ -52,7 +52,7 @@ class spamassmilter::config (
     }
   }
 
-  if $socketowner != '' {
+  if $socketowner {
     file_line { 'spamassmilter: socketowner':
       ensure => present,
       path   => $sysconfig_file,
@@ -70,7 +70,7 @@ class spamassmilter::config (
     }
   }
 
-  if $socketmode != '' {
+  if $socketmode {
     file_line { 'spamassmilter: socketmode':
       ensure => 'present',
       path   => $sysconfig_file,
